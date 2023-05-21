@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Gotham;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/GOTHAM-BOOK.OTF);
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: normal;
+    font-style: italic;
+    src: url(../fonts/GOTHAM-BOOKITALIC.OTF);
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/GOTHAM-BOLD.OTF);
+}
+
+@font-face {
+    font-family: Gotham;
+    font-weight: 800;
+    font-style: normal;
+    src: url(../fonts/GOTHAM-BLACK.OTF);
+}
+
+* {
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    font-family: "Gotham", "sans-serif";
+    background-color: white;
+    color: black;
+    font-size: larger;
+    transition: background-color .5s;
+    opacity: 1;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .menu {
+    width: auto;
+    margin: auto;
+    border-bottom: solid black 2px;
+}
+
+.header .menu ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    width: fit-content;
+    height: 100%;
+}
+
+.header .menu li {
+    vertical-align: middle;
+    display: inline;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+a.norm {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+    color: black;
+    padding: 1dvw 2.5dvw 1dvw;
+    font-weight: bold;
+    transition-property: color, background;
+    transition-duration: 0.4s;
+    border-top: 0.3dvw solid transparent;
+}
+
+a.norm:hover {
+    background:
+            linear-gradient(white, white) padding-box,
+            linear-gradient(to right, orange, darkorchid) border-box;
+    transition-property: color, background;
+    transition-duration: 0.4s;
+}
+
+a#curr {
+    background:
+            linear-gradient(white, white) padding-box,
+            linear-gradient(to right, orange, darkorchid) border-box;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    background: black;
+    height: 70px;
+    width: 100%;
+}
+
+.footer #copyright {
+    text-align: center;
+    width: 100%;
+    top: 40%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: medium;
+    opacity: 50%;
+}
+
+.footer #mail {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.footer #mail:hover {
+    opacity: 50%;
+}
+
+a.hook {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+a.hook:hover {
+    opacity: 50%;
+}
+
+/*@media screen and (max-width: 1080px) {
+    body {*/
+        /*min-height: 1920px;
+        min-width: 1080px;*/
+        /*font-size: xx-large;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    div#top {
+        display: none;
+    }
+
+    a.logoHref {
+        display: none;
+    }
+
+    a.logoNav {
+        visibility: visible;
+    }
+
+    .footer {
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .menu .norm, .alt {
+        visibility: hidden;
+    }
+
+    .menu-footer {
+        visibility: hidden;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .menu .norm, .alt {
+            display: none;
+        }
+
+        .menu-footer {
+            display: none;
+        }
+    }
+}*/
